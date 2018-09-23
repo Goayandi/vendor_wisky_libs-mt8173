@@ -1,0 +1,36 @@
+Library of MTK video codec driver, icluding video decoder & encoder driver for each codec format,
+factory video dram stability test.
+
+This library is pre-built by MediaTek internal.
+
+
+WHAT IT DOES?
+=============
+libvcodecdrv.so contains MediaTek developed video related codec driver.  
+Without them, video playback & record functionalities will not work¡¨
+
+HOW IT WAS BUILT?
+==================
+It needs the following library from AOSP:
+1.  libcutils.so
+2.  libdl.so
+3.  liblog.so
+
+
+and the following libs from MediaTek:
+1.  libvcodec_utility.so
+2.  libvcodec_oal.so
+3.  libmp4enc_sa.ca7
+4.  libvp8dec_sa.ca7
+5.  libvc1dec_sa.ca7
+
+All source/dependency modules of this module are already put in
+'vendor/mediatek/libs' folder.
+
+HOW TO USE IT?
+==============
+
+Provide api for in-house video SW codec and HW codec for mtk omx component to control the video decoder & encoder.
+all api interface are at (device/mediatek/common/kernel-headers)
+
+All the source code of this library were written by MediaTek co..
